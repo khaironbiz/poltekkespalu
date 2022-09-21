@@ -36,7 +36,7 @@
                 <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
                     <div class="one-third order-md-last js-fullheight img">
                         <video autoplay loop muted playsinline>
-                            <source src="{{asset('meetup/videos/pinguin.mp4')}}" type="video/mp4">
+                            <source src="{{asset('meetup/videos/parsinta.mp4')}}" type="video/mp4">
                         </video>
                     </div>
                     <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
