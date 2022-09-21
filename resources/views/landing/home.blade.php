@@ -111,44 +111,45 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <form>
+            <form action="{{route('reg_expo')}}" method="post">
+                <div class="modal-body">
+                    @csrf
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Nama</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="staticEmail" >
+                            <input type="text" class="form-control" name="nama" >
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="staticEmail" >
+                            <input type="email" class="form-control" name="email" >
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">HP</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="staticEmail">
+                            <input type="number" class="form-control" name="hp">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Institusi</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" name="institusi">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Jabatan</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" name="posisi">
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

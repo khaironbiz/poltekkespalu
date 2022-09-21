@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[App\Http\Controllers\HomeController::class,'index'])->name('root')->middleware('guest');
+Route::post('/reg/expo',[App\Http\Controllers\HomeController::class,'reg_expo'])->name('reg_expo')->middleware('guest');
